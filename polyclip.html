@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Sutherland Hodgman Algorithm</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+   
+</head>
+<body style="text-align: center; margin: 60px; background-color: black;">
+
+  <p class="heading" style="color: white;">Polygon Clipping by Sutherland Hodgman Algorithm</p> <br>
+  <div>
+
+
+  
+  <select style="margin-right: 10px;" id ="ddl" class="custom-select" name="ddl" onmousedown="this.value='';" onchange="jsFunctionRandom(this.value);">
+    <option class="" value='select' selected="Select A Subject Polygon" >Select A Subject Polygon</option>
+    <option class="" value='Rand1'><i class="fas fa-square"></i>Random Polygon 1</option>
+    <option class="" value='Rand2'>Random Polygon 2</option>
+    <option class="" value='Rand3'>Random Polygon 3</option>
+    <option class="" value='Rand4'>Random Polygon 4</option>
+    <option class="" value='Rand5'>Random Polygon 5</option>
+  </select>
+
+
+      <select id ="ddl" name="ddl" onmousedown="this.value='';" onchange="jsFunction(this.value);">
+        <option value='select' selected="Select A Clip Polygon" >Select A Clip Polygon</option>
+        <option value='Rectangle'><i class="fas fa-square"></i>Rectangle</option>
+        <option value='Triangle'>Triangle</option>
+        <option value='Square'>Square</option>
+        <option value='Pentagon'>Pentagon</option>
+        <option value='Hexagon'>Hexagon</option>
+      </select>
+
+      
+       <button class="btn btn-info btn-lg" style="margin-top: -10px; margin-left: 10px; " onclick="redwarshape()" ><i class="fa fa-arrow-circle-left mr-1"></i>Ready Draw!</button>
+       <button type="button" class="btn btn-light-blue" style="margin-top: -10px; margin-left: 10px; " onclick="reloadPage();">Clear Canvas</button>  
+      </div><br>
+      <hr>
+      
+      <div style="display: inline-block;">
+        <p class="heading" style="color: gold; text-align: left;">Polygon Before Clipping</p>
+      <p class="heading" style="color: aquamarine; text-align: right; margin-top: -30px;">Polygon After Clipping</p>
+        <canvas class="canvasSuper" id='canvas' width='500' height='500'></canvas>
+        <div class="vl"></div>
+        <canvas  class="canvasResult" id='canvasResult' width='500' height='500'></canvas> 
+        
+      </div>
+       <!-- <p>clipPolygon = [[[x1, x1], [y1, x1], [y1, y1], [x1, y1]]];</p>  -->
+      
+</body>
+ <script src="assets/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+</html>
