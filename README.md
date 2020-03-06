@@ -1,2 +1,2 @@
 # Clipping-js
-working : https://pg.rdunlocked.me
+working : http://pg.rdunlocked.me
